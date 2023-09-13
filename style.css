@@ -1,0 +1,716 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 7.6em;
+}
+.tag1{
+    color: rgb(3, 0, 0);
+    font-size: 3em;
+    font-weight: bolder;
+}
+.tag2{
+    color: white;
+    font-size: 2em;
+}
+.main div{
+    margin-top: .75em;
+    
+    
+}
+.main button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #009688;
+    color: white;
+    border: #009688;
+    position: relative;
+    left: 40%;
+}
+.menu,.about,.contact{
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;*/
+    padding: 20px;
+    background:black;
+    color: white;
+   /* text-align: center;
+    font-size: 1em;*/
+}
+.menu-category{
+    flex: 1; /* Equal width for each category */
+    margin-right: 20px; /* Add some space between categories */
+}
+.menu-category h3 {
+    background: #009688;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-category th,
+.menu-category td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+/* Additional styling for specific columns */
+.menu-category td:nth-child(2) {
+    text-align: right;
+}
+#menuheading,#abouts,#Contact{
+   /* display: grid;*/
+    background:#009688;
+    color: white;
+   /* display: flex;
+    justify-content: center;
+    font-size: 2em;*/
+    padding: 10px;
+    text-align: center;
+}
+.menu th{
+    color: #009688;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+table{
+    width: 100%;
+   border-collapse: collapse;
+
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.starters,.salads,.pizzas{
+    width: 280px;
+    float: left;
+    margin: 10px;
+}
+th,td{
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: medium;
+}
+
+.about-content {
+    margin-bottom: 20px;
+    max-width: 1000px; /* Limit the maximum width */
+    line-height: 1.5;
+}
+
+.about-image {
+    margin-bottom: 20px;
+   
+    padding: 5px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border:2px solid #009688;
+}
+
+.opening-hours {
+    background: #009688;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opening-hours h3 {
+    margin-bottom: 10px;
+}
+
+.opening-hours table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30%;
+}
+.day, .time {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+.section-title{
+    background: #009688; /* Set background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+body,h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pizza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    border: 5px solid black;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 7.6em;
+}
+.tag1{
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.tag2{
+    color: white;
+    font-size: 2em;
+}
+.main div{
+    margin-top: .75em;
+    
+    
+}
+.main button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #009688;
+    color: white;
+    border: #009688;
+    position: relative;
+    left: 40%;
+}
+.menu,.about,.contact{
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;*/
+    padding: 20px;
+    background:black;
+    color: white;
+   /* text-align: center;
+    font-size: 1em;*/
+}
+.menu-category{
+    flex: 1; /* Equal width for each category */
+    margin-right: 20px; /* Add some space between categories */
+}
+.menu-category h3 {
+    background: #009688;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-category th,
+.menu-category td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+/* Additional styling for specific columns */
+.menu-category td:nth-child(2) {
+    text-align: right;
+}
+#menuheading,#abouts,#Contact{
+   /* display: grid;*/
+    background:#009688;
+    color: white;
+   /* display: flex;
+    justify-content: center;
+    font-size: 2em;*/
+    padding: 10px;
+    text-align: center;
+}
+.menu th{
+    color: #009688;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+table{
+    width: 100%;
+   border-collapse: collapse;
+
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.starters,.salads,.pizzas{
+    width: 280px;
+    float: left;
+    margin: 10px;
+}
+th,td{
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: medium;
+}
+
+.about-content {
+    margin-bottom: 20px;
+    max-width: 1000px; /* Limit the maximum width */
+    line-height: 1.5;
+}
+
+.about-image {
+    margin-bottom: 20px;
+   
+    padding: 5px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border:2px solid #009688;
+}
+
+.opening-hours {
+    background: #009688;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opening-hours h3 {
+    margin-bottom: 10px;
+}
+
+.opening-hours table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10%;
+}
+.day, .time {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+.section-title{
+    background: #009688; /* Set background color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+body,h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pizza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    border: 5px solid black;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 7.6em;
+}
+.tag1{
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.tag2{
+    color: white;
+    font-size: 2em;
+}
+.main div{
+    margin-top: .75em;
+    
+    
+}
+.main button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #009688;
+    color: white;
+    border: #009688;
+    position: relative;
+    left: 40%;
+}
+.menu,.about,.contact{
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;*/
+    padding: 20px;
+    background:black;
+    color: white;
+   /* text-align: center;
+    font-size: 1em;*/
+}
+.menu-category{
+    flex: 1; /* Equal width for each category */
+    margin-right: 20px; /* Add some space between categories */
+}
+.menu-category h3 {
+    background: #009688;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-category th,
+.menu-category td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+/* Additional styling for specific columns */
+.menu-category td:nth-child(2) {
+    text-align: right;
+}
+#menuheading,#abouts,#Contact{
+   /* display: grid;*/
+    background:#009688;
+    color: white;
+   /* display: flex;
+    justify-content: center;
+    font-size: 2em;*/
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.menu th{
+    color: #009688;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+table{
+    width: 100%;
+   border-collapse: collapse;
+
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.starters,.salads,.pizzas{
+    width: 280px;
+    float: left;
+    margin: 10px;
+}
+th,td{
+    padding: 10px;
+    border: 1px solid white;
+    text-align: left;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: medium;
+}
+
+.about-content {
+    margin-bottom: 20px;
+    max-width: 1000px; /* Limit the maximum width */
+    line-height: 1.5;
+}
+
+.about-image {
+    margin-bottom: 20px;
+   
+    padding: 5px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border:2px solid #009688;
+}
+
+.opening-hours {
+    background: #009688;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opening-hours h3 {
+    margin-bottom: 10px;
+}
+
+.opening-hours table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10%;
+}
+.day, .time {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+.contact {
+    background: #000; /* Black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-title {
+    background: #009688; /* Blue box */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #009688; /* Blue border */
+    border-radius: 5px;
+    background-color: #111; /* Dark background */
+    color: white;
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("down-arrow.png"); /* Replace with your arrow icon */
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+.form-group input[type="date"] {
+    background-color: #111; /* Dark background */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #009688; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #007a6c; /* Darker blue on hover */
+}
